@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./public/assets/css/tailwind.css">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+</head>
+<body>
+    <nav class="bg-white shadow-lg top-0 md:sticky z-20 mr-1">
+        <div class="mx-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <!-- Left Nav -->
+                <div class="flex space-x-7">
+                    <!-- Logo -->
+                    <a href="#" class="flex items-center py-4 px-2">
+                        <span class="font-semibold text-blue-500 text-base md:text-lg">
+                            WSTogether
+                        </span>
+                    </a>
+                    <div class="items-center hidden px-2 space-x-2 md:flex-1 lg:flex md:mr-auto md:ml-5">
+                        <!-- search icon -->
+                        <span>
+                          <svg
+                            class="w-5 h-5 text-gray-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="text"
+                          placeholder="Search"
+                          class="px-4 py-3 rounded-md hover:bg-gray-100 lg:max-w-sm md:py-2 md:flex-1 focus:outline-none md:focus:bg-gray-100 md:focus:shadow md:focus:border"
+                        />
+                    </div>
+                </div>
+                <!-- Middle Nav -->
+                <div class="navigation-menu flex items-center space-x-1 hidden md:flex">
+                    <!-- Home Btn -->
+                    <div class="relative flex items-center">
+                        <button class="p-2 focus:outline-none hover:bg-gray-100 rounded-lg px-8 hover:border">
+                            <svg
+                                class="w-6 h-6 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Group space Btn -->
+                    <div class="relative flex items-center">
+                        <button class="p-2 text-gray-400 focus:outline-none hover:bg-gray-100 rounded-lg px-8 hover:border">
+                            <div class="absolute left-12 top-1 z-10 p-1 bg-red-400 rounded-full"></div>
+                            <div class="absolute left-12 top-1 z-10 p-1 bg-red-400 border rounded-full"></div>
+                            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 310.746 310.746" style="enable-background:new 0 0 310.746 310.746;" xml:space="preserve">
+                                <g id="XMLID_227_">
+                                    <path id="XMLID_228_" d="M32.622,75.373c0,23.666,18.367,43.109,41.594,44.857c-7.382-13.302-11.594-28.596-11.594-44.857   s4.212-31.556,11.594-44.857C50.989,32.264,32.622,51.707,32.622,75.373z"/>
+                                    <path id="XMLID_229_" d="M0,227.996c0,8.284,6.716,15,15,15h1.025c11.602-40.229,40.192-73.322,77.464-90.984   c-5.17-1.077-10.482-1.639-15.867-1.639C34.821,150.373,0,185.194,0,227.996z"/>
+                                    <path id="XMLID_230_" d="M278.124,75.373c0-23.666-18.367-43.109-41.594-44.857c7.382,13.302,11.594,28.596,11.594,44.857   s-4.212,31.556-11.594,44.857C259.757,118.482,278.124,99.039,278.124,75.373z"/>
+                                    <path id="XMLID_231_" d="M295.746,242.996c8.284,0,15-6.716,15-15c0-42.802-34.821-77.623-77.622-77.623   c-5.385,0-10.697,0.561-15.867,1.639c37.271,17.662,65.862,50.756,77.464,90.984H295.746z"/>
+                                    <path id="XMLID_232_" d="M155.373,138.123c21.093,0,39.774-10.473,51.157-26.479c7.289-10.25,11.594-22.764,11.594-36.271   s-4.305-26.021-11.594-36.271c-11.383-16.006-30.064-26.479-51.157-26.479c-34.601,0-62.75,28.149-62.75,62.75   S120.772,138.123,155.373,138.123z"/>
+                                    <path id="XMLID_233_" d="M270.373,283.123c0-14.107-2.56-27.627-7.229-40.127c-13.457-36.025-44.485-63.549-82.606-72.092   c-8.102-1.816-16.522-2.781-25.165-2.781c-63.411,0-115,51.589-115,115c0,8.284,6.716,15,15,15h200   C263.657,298.123,270.373,291.407,270.373,283.123z"/>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Question space Btn -->
+                    <div class="relative flex items-center">
+                        <button class="p-2 text-gray-400 focus:outline-none hover:bg-gray-100 rounded-lg px-8 hover:border">
+                            <div class="absolute left-12 top-1 z-10 p-1 bg-red-400 rounded-full"></div>
+                            <div class="absolute left-12 top-1 z-10 p-1 bg-red-400 border rounded-full"></div>
+                            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="-2 -2 24 24" preserveAspectRatio="xMinYMin" class="jam jam-write">
+                                <path d="M5.72 14.456l1.761-.508 10.603-10.73a.456.456 0 0 0-.003-.64l-.635-.642a.443.443 0 0 0-.632-.003L6.239 12.635l-.52 1.82zM18.703.664l.635.643c.876.887.884 2.318.016 3.196L8.428 15.561l-3.764 1.084a.901.901 0 0 1-1.11-.623.915.915 0 0 1-.002-.506l1.095-3.84L15.544.647a2.215 2.215 0 0 1 3.159.016zM7.184 1.817c.496 0 .898.407.898.909a.903.903 0 0 1-.898.909H3.592c-.992 0-1.796.814-1.796 1.817v10.906c0 1.004.804 1.818 1.796 1.818h10.776c.992 0 1.797-.814 1.797-1.818v-3.635c0-.502.402-.909.898-.909s.898.407.898.91v3.634c0 2.008-1.609 3.636-3.593 3.636H3.592C1.608 19.994 0 18.366 0 16.358V5.452c0-2.007 1.608-3.635 3.592-3.635h3.592z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Online class Btn -->
+                    <div class="relative flex items-center">
+                        <button class="p-2 text-gray-400 focus:outline-none hover:bg-gray-100 rounded-lg px-8 hover:border">
+                            <div class="absolute left-12 top-1 z-10 p-1 bg-red-400 rounded-full animate-ping"></div>
+                            <div class="absolute left-12 top-1 z-10 p-1 bg-red-400 border rounded-full"></div>
+                            <svg class="relative w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.654 31.654" style="enable-background:new 0 0 31.654 31.654;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M23.292,5.926c0-0.242-0.193-0.44-0.435-0.44h-11.45c-0.24,0-0.434,0.198-0.434,0.44v2.899    c0.26,0.252,0.483,0.558,0.63,0.948l0.122-0.087c0.036-0.035,0.077-0.06,0.116-0.089v-3.23h10.583v7.676H11.841v-0.827    l-0.867,0.594v0.675c0,0.243,0.194,0.441,0.434,0.441c0,0,10.084,0,11.007,0c0.925,0,0.878-0.529,0.878-0.529V5.926H23.292z"/>
+                                        <ellipse cx="6.811" cy="6.361" rx="1.831" ry="1.861"/>
+                                        <path d="M30.327,24.698l-1.804-1.66l-0.266-0.245l-1.22-1.12c-1.459-1.345-3.083-0.819-4.581,0.481    l-0.015,0.013l-0.087,0.101c-0.188-0.034-0.557-0.134-0.783-0.439c-0.227-0.309-0.266-0.763-0.118-1.354    c0.062-0.248,0.104-0.47,0.126-0.666h2.712c0.958,0,1.731-0.795,1.731-1.775V1.771c0-0.98-0.773-1.771-1.731-1.771H1.771    C0.813,0,0.037,0.791,0.037,1.771v16.262c0,0.98,0.776,1.775,1.734,1.775h8.641c0,0,0.375,3.549-2.62,3.549v1.775h2.62h5.236    h2.622v-1.775c-3.111,0-2.622-3.549-2.622-3.549h5.383c-0.02,0.145-0.05,0.313-0.104,0.529c-0.19,0.76-0.121,1.372,0.209,1.82    c0.232,0.316,0.549,0.484,0.813,0.575l-0.196,0.226l-0.024,0.03c-1.063,1.633-1.598,3.107-0.17,4.422l1.417,1.304l0.283,0.26    l1.791,1.649c1.607,1.478,4.099,1.353,5.553-0.283C32.058,28.709,31.934,26.177,30.327,24.698z M4.453,15.596H3.912v-4.583h0.542    L4.453,15.596z M13.147,18.705c-0.581,0-1.052-0.478-1.052-1.068c0-0.592,0.472-1.069,1.052-1.069    c0.582,0,1.052,0.478,1.052,1.069C14.199,18.228,13.728,18.705,13.147,18.705z M9.248,15.596l-0.001-4.604h0.521v1.441    c0,0.002,0,0.006,0,0.008c0,0.448,0.359,0.814,0.799,0.814c0.131,0,0.248-0.04,0.358-0.095l0.003,0.004l1.382-0.942l0.728-0.495    l0.521-0.354l0,0c0-0.004,0.001-0.004,0.003-0.004c0.264-0.268,0.313-0.669,0.148-0.982l2.83-1.952l-0.787,2.495h0.763    l0.349-1.167h1.279l0.366,1.167h0.799l-0.086-0.27c0.155,0.198,0.4,0.338,0.729,0.338c0.385,0,0.691-0.166,0.865-0.397h0.018    l0.054,0.329h0.667c-0.037-0.183-0.048-0.446-0.048-0.714V9.147c0-0.651-0.271-1.257-1.208-1.257c-0.462,0-0.84,0.128-1.057,0.262    l0.145,0.488c0.197-0.128,0.499-0.219,0.787-0.219c0.516,0,0.594,0.322,0.594,0.517v0.05c-1.064-0.007-1.711,0.368-1.732,1.09    l-1.043-3.265h-0.943L16.71,7.899l-3.222,2.224c-0.134-0.101-0.289-0.154-0.449-0.16c-0.222-0.009-0.449,0.068-0.619,0.243    c0,0-0.003,0.004-0.005,0.004l-0.104,0.074l-0.942,0.653V10.66c-0.175-2.114-2.587-2.082-2.587-2.082H7.74l-0.879,1.469    L5.979,8.578H4.976c-2.542,0-2.56,1.831-2.56,2.523H2.415v4.494H1.894V1.886h22.275v13.71H9.248z M17.433,7.647    c0.02-0.08,0.04-0.16,0.058-0.234h0.012c0.061,0.238,0.126,0.519,0.205,0.77l0.317,1.014h-1.039l0.312-1.014    c0.028-0.104,0.056-0.218,0.084-0.331l0.166-0.111L17.433,7.647z M19.767,10.031c0-0.45,0.499-0.562,1.021-0.555v0.409    c0,0.055,0,0.109-0.018,0.164c-0.072,0.215-0.283,0.409-0.583,0.409C19.953,10.459,19.767,10.325,19.767,10.031z M21.925,27    c-1.226-1.125-0.656-2.287,0.249-3.69l0.652-0.747c1.289-1.107,2.594-1.631,3.847-0.479l1.235,1.137    c-0.303,1.023-0.845,1.98-1.613,2.842l0,0c-1.031,1.159-2.229,1.885-2.942,2.251L21.925,27z M30.2,29.971    c-1.254,1.406-3.399,1.516-4.783,0.242l-1.496-1.377c1.177-0.662,2.176-1.45,2.972-2.342c0.931-1.046,1.403-2.037,1.64-2.7    l1.429,1.314C31.345,26.381,31.453,28.562,30.2,29.971z"/>
+                                        <path d="M24.22,23.229c-0.369-0.341-0.943-0.311-1.278,0.064c-0.335,0.377-0.307,0.959,0.064,1.298    l1.284,1.185c0.37,0.34,0.944,0.311,1.279-0.064c0.335-0.377,0.306-0.961-0.063-1.301L24.22,23.229z M25.165,25.339    c-0.133,0.151-0.362,0.16-0.51,0.025l-1.284-1.181c-0.147-0.137-0.158-0.371-0.025-0.52c0.134-0.148,0.362-0.162,0.509-0.024    l1.285,1.182C25.287,24.957,25.298,25.188,25.165,25.339z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Right Nav -->
+                <div class="flex flex-shrink-0 items-center space-x-1">
+                    <!-- Mobile Searchbar-->
+                    <div class="relative flex items-center">
+                        <button class="p-2 bg-gray-100 rounded-full lg:hidden focus:outline-none focus:ring hover:bg-gray-200">
+                            <svg
+                                class="w-5 h-5 md:w-6 md:h-6 text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Mobile Notification Btn -->
+                    <div class="relative md:hidden">
+                        <div class="absolute right-0 p-1 bg-red-400 rounded-full"></div>
+                        <div class="absolute right-0 p-1 bg-red-400 border rounded-full"></div>
+                        <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200 focus:outline-none focus:ring">
+                            <svg
+                                class="w-5 h-5 text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Large device navitem -->
+                    <div class="items-center hidden md:flex space-x-1">
+                        <!-- Create new post Btn -->
+                        <div class="relative">
+                            <button class="p-2 bg-gray-100 rounded-full inline-flex items-center hover:bg-gray-200 focus:outline-none focus:ring">
+                                <svg class="w-4 h-4 mr-1 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="M30.276 1.722C29.168.611 27.69 0 26.121 0s-3.045.61-4.154 1.72L4.294 19.291c-.105.104-.185.229-.235.367l-4 11c-.129.355-.046.756.215 1.031.192.202.455.311.726.311.098 0 .196-.014.293-.044l9.949-3.052c.156-.047.298-.133.414-.248l18.621-18.621C31.389 8.926 32 7.448 32 5.878c-.001-1.569-.611-3.046-1.724-4.156zM10.092 27.165l-3.724 1.144c-.217-.637-.555-1.201-1.016-1.662-.401-.399-.866-.709-1.356-.961L5.7 21H8v2c0 .553.447 1 1 1h1.765l-.673 3.165zm14.72-14.494L12.628 24.855l.35-1.647c.062-.296-.012-.603-.202-.837-.19-.235-.475-.371-.776-.371h-2v-2c0-.552-.448-1-1-1H7.422L19.315 7.175l.012.011c.732-.733 1.707-1.136 2.742-1.136s2.011.403 2.742 1.136 1.138 1.707 1.138 2.743c0 1.036-.403 2.009-1.137 2.742zm4.05-4.05l-.932.933c-.09-1.429-.683-2.761-1.703-3.782-1.021-1.022-2.354-1.614-3.787-1.703l.938-.931.002-.002C24.11 2.403 25.085 2 26.121 2s2.01.403 2.741 1.136C29.596 3.869 30 4.843 30 5.878c0 1.037-.402 2.011-1.138 2.743zm-6.569-.328l-10 10c-.391.391-.391 1.023 0 1.414.194.195.451.293.707.293s.511-.098.707-.293l10-10c.391-.391.391-1.023 0-1.414-.392-.391-1.023-.391-1.414 0z"/>
+                                </svg>
+                                Create
+                            </button>
+                        </div>
+                        <!-- Notification Btn -->
+                        <div class="relative">
+                            <div class="absolute right-0 p-1 bg-red-400 rounded-full"></div>
+                            <div class="absolute right-0 p-1 bg-red-400 border rounded-full"></div>
+                            <button class="p-2 bg-gray-100 rounded-full hover:bg-gray-200 focus:outline-none">
+                                <svg
+                                    class="w-6 h-6 text-gray-500"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Message Btn -->
+                        <div class="relative">
+                            <div class="absolute right-0 p-1 bg-red-400 rounded-full"></div>
+                            <div class="absolute right-0 p-1 bg-red-400 border rounded-full"></div>
+                            <button class="p-2 text-gray-500 bg-gray-100 rounded-full hover:bg-gray-200 focus:outline-none focus:ring">
+                                <svg class="w-6 h-6 fill-current" viewBox="30 31.5 452 452">
+                                    <g fill-rule="evenodd">
+                                    <path d="M 441,81 A 40,40 0 0 1 481,121 L 481,395 A 40,40 0 0 1 441,435 L 71,435 A 40,40 0 0 1 31,395 L 31,121 A 40,40 0 0 1 71,81 Z M 63,121 A 8,8 0 0 1 71,113 L 441,113 A 8,8 0 0 1 449,121 L 449,131 C 448,150 438,166 417,188 L 288,291 C258,311 254,311 224,291 L 95,188 C 74,166 64,150 63,131 Z M 63,202 C 66,205 75,214 80,218 L 208,320 C 245,344 265,344 304,320 L 432,218 C 437,214 446,205 449,202 L 449,394 A 8,8 0 0 1 441,402 L 71,402 A 8,8 0 0 1 63,394 Z" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- More Navs -->
+                        <div class="relative">
+                            <button class="p-2 bg-gray-100 text-gray-500 rounded-full inline-flex items-center hover:bg-gray-200 focus:outline-none focus:ring">
+                                <svg class="w-5 h-5 fill-current md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24.75px" height="24.75px" viewBox="0 0 24.75 24.75" style="enable-background:new 0 0 24.75 24.75;" xml:space="preserve">
+                                    <g>
+                                        <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2   c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2   c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z"/>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Profile Image -->
+                    <div class="relative">
+                        <button class="p-1 bg-gray-200 rounded-full focus:outline-none focus:ring">
+                            <img
+                            class="object-cover w-8 h-8 rounded-full"
+                            src="./public/assets/images/user.jpg"
+                            alt="Profile Image"
+                            />
+                        </button>
+                        <!-- green dot -->
+                        <div class="absolute right-0 p-1 bg-green-400 rounded-full bottom-3 animate-ping"></div>
+                        <div class="absolute right-0 p-1 bg-green-400 border border-white rounded-full bottom-3"></div>
+                    </div>
+                </div>
+                <!-- Bottom Button For Mobile Screen -->
+                <div class="fixed bottom-3 right-2 md:hidden sm:flex text-sm">
+                    <button class="p-2 bg-gray-100 rounded-full inline-flex items-center hover:bg-gray-200 focus:outline-none focus:ring">
+                        <svg class="w-4 h-4 mr-1 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                        <path d="M30.276 1.722C29.168.611 27.69 0 26.121 0s-3.045.61-4.154 1.72L4.294 19.291c-.105.104-.185.229-.235.367l-4 11c-.129.355-.046.756.215 1.031.192.202.455.311.726.311.098 0 .196-.014.293-.044l9.949-3.052c.156-.047.298-.133.414-.248l18.621-18.621C31.389 8.926 32 7.448 32 5.878c-.001-1.569-.611-3.046-1.724-4.156zM10.092 27.165l-3.724 1.144c-.217-.637-.555-1.201-1.016-1.662-.401-.399-.866-.709-1.356-.961L5.7 21H8v2c0 .553.447 1 1 1h1.765l-.673 3.165zm14.72-14.494L12.628 24.855l.35-1.647c.062-.296-.012-.603-.202-.837-.19-.235-.475-.371-.776-.371h-2v-2c0-.552-.448-1-1-1H7.422L19.315 7.175l.012.011c.732-.733 1.707-1.136 2.742-1.136s2.011.403 2.742 1.136 1.138 1.707 1.138 2.743c0 1.036-.403 2.009-1.137 2.742zm4.05-4.05l-.932.933c-.09-1.429-.683-2.761-1.703-3.782-1.021-1.022-2.354-1.614-3.787-1.703l.938-.931.002-.002C24.11 2.403 25.085 2 26.121 2s2.01.403 2.741 1.136C29.596 3.869 30 4.843 30 5.878c0 1.037-.402 2.011-1.138 2.743zm-6.569-.328l-10 10c-.391.391-.391 1.023 0 1.414.194.195.451.293.707.293s.511-.098.707-.293l10-10c.391-.391.391-1.023 0-1.414-.392-.391-1.023-.391-1.414 0z"/>
+                        </svg>
+                        Create
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Small devices navbar -->
+    <div class="bg-white md:bg-gray-100 sticky top-0 pb-1 pt-1">
+        <div class="mx-w-md mx-auto px-4 mt-3 mb-2">
+            <div class="flex justify-center">
+                <div class="navigation-menu flex items-center space-x-7 mx-auto md:hidden">
+                    <!-- Home Btn -->
+                    <div class="relative flex items-center">
+                        <button class="p-2 focus:outline-none hover:bg-gray-100 rounded-lg hover:border">
+                            <svg
+                                class="w-6 h-6 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Group space Btn -->
+                    <div class="relative flex items-center">
+                        <button class="p-2 text-gray-400 focus:outline-none hover:bg-gray-100 rounded-lg hover:border">
+                            <div class="absolute left-6 top-1 z-10 p-1 bg-red-400 rounded-full"></div>
+                            <div class="absolute left-6 top-1 z-10 p-1 bg-red-400 border rounded-full"></div>
+                            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 310.746 310.746" style="enable-background:new 0 0 310.746 310.746;" xml:space="preserve">
+                                <g id="XMLID_227_">
+                                    <path id="XMLID_228_" d="M32.622,75.373c0,23.666,18.367,43.109,41.594,44.857c-7.382-13.302-11.594-28.596-11.594-44.857   s4.212-31.556,11.594-44.857C50.989,32.264,32.622,51.707,32.622,75.373z"/>
+                                    <path id="XMLID_229_" d="M0,227.996c0,8.284,6.716,15,15,15h1.025c11.602-40.229,40.192-73.322,77.464-90.984   c-5.17-1.077-10.482-1.639-15.867-1.639C34.821,150.373,0,185.194,0,227.996z"/>
+                                    <path id="XMLID_230_" d="M278.124,75.373c0-23.666-18.367-43.109-41.594-44.857c7.382,13.302,11.594,28.596,11.594,44.857   s-4.212,31.556-11.594,44.857C259.757,118.482,278.124,99.039,278.124,75.373z"/>
+                                    <path id="XMLID_231_" d="M295.746,242.996c8.284,0,15-6.716,15-15c0-42.802-34.821-77.623-77.622-77.623   c-5.385,0-10.697,0.561-15.867,1.639c37.271,17.662,65.862,50.756,77.464,90.984H295.746z"/>
+                                    <path id="XMLID_232_" d="M155.373,138.123c21.093,0,39.774-10.473,51.157-26.479c7.289-10.25,11.594-22.764,11.594-36.271   s-4.305-26.021-11.594-36.271c-11.383-16.006-30.064-26.479-51.157-26.479c-34.601,0-62.75,28.149-62.75,62.75   S120.772,138.123,155.373,138.123z"/>
+                                    <path id="XMLID_233_" d="M270.373,283.123c0-14.107-2.56-27.627-7.229-40.127c-13.457-36.025-44.485-63.549-82.606-72.092   c-8.102-1.816-16.522-2.781-25.165-2.781c-63.411,0-115,51.589-115,115c0,8.284,6.716,15,15,15h200   C263.657,298.123,270.373,291.407,270.373,283.123z"/>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Question space Btn -->
+                    <div class="relative flex items-center">
+                        <button class="p-2 text-gray-400 focus:outline-none hover:bg-gray-100 rounded-lg hover:border">
+                            <div class="absolute left-6 top-1 z-10 p-1 bg-red-400 rounded-full"></div>
+                            <div class="absolute left-6 top-1 z-10 p-1 bg-red-400 border rounded-full"></div>
+                            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="-2 -2 24 24" preserveAspectRatio="xMinYMin" class="jam jam-write">
+                                <path d="M5.72 14.456l1.761-.508 10.603-10.73a.456.456 0 0 0-.003-.64l-.635-.642a.443.443 0 0 0-.632-.003L6.239 12.635l-.52 1.82zM18.703.664l.635.643c.876.887.884 2.318.016 3.196L8.428 15.561l-3.764 1.084a.901.901 0 0 1-1.11-.623.915.915 0 0 1-.002-.506l1.095-3.84L15.544.647a2.215 2.215 0 0 1 3.159.016zM7.184 1.817c.496 0 .898.407.898.909a.903.903 0 0 1-.898.909H3.592c-.992 0-1.796.814-1.796 1.817v10.906c0 1.004.804 1.818 1.796 1.818h10.776c.992 0 1.797-.814 1.797-1.818v-3.635c0-.502.402-.909.898-.909s.898.407.898.91v3.634c0 2.008-1.609 3.636-3.593 3.636H3.592C1.608 19.994 0 18.366 0 16.358V5.452c0-2.007 1.608-3.635 3.592-3.635h3.592z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Online class Btn -->
+                    <div class="relative flex items-center">
+                        <button class="p-2 text-gray-400 focus:outline-none hover:bg-gray-100 rounded-lg hover:border">
+                            <div class="absolute left-6 top-1 z-10 p-1 bg-red-400 rounded-full animate-ping"></div>
+                            <div class="absolute left-6 top-1 z-10 p-1 bg-red-400 border rounded-full"></div>
+                            <svg class="relative w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.654 31.654" style="enable-background:new 0 0 31.654 31.654;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M23.292,5.926c0-0.242-0.193-0.44-0.435-0.44h-11.45c-0.24,0-0.434,0.198-0.434,0.44v2.899    c0.26,0.252,0.483,0.558,0.63,0.948l0.122-0.087c0.036-0.035,0.077-0.06,0.116-0.089v-3.23h10.583v7.676H11.841v-0.827    l-0.867,0.594v0.675c0,0.243,0.194,0.441,0.434,0.441c0,0,10.084,0,11.007,0c0.925,0,0.878-0.529,0.878-0.529V5.926H23.292z"/>
+                                        <ellipse cx="6.811" cy="6.361" rx="1.831" ry="1.861"/>
+                                        <path d="M30.327,24.698l-1.804-1.66l-0.266-0.245l-1.22-1.12c-1.459-1.345-3.083-0.819-4.581,0.481    l-0.015,0.013l-0.087,0.101c-0.188-0.034-0.557-0.134-0.783-0.439c-0.227-0.309-0.266-0.763-0.118-1.354    c0.062-0.248,0.104-0.47,0.126-0.666h2.712c0.958,0,1.731-0.795,1.731-1.775V1.771c0-0.98-0.773-1.771-1.731-1.771H1.771    C0.813,0,0.037,0.791,0.037,1.771v16.262c0,0.98,0.776,1.775,1.734,1.775h8.641c0,0,0.375,3.549-2.62,3.549v1.775h2.62h5.236    h2.622v-1.775c-3.111,0-2.622-3.549-2.622-3.549h5.383c-0.02,0.145-0.05,0.313-0.104,0.529c-0.19,0.76-0.121,1.372,0.209,1.82    c0.232,0.316,0.549,0.484,0.813,0.575l-0.196,0.226l-0.024,0.03c-1.063,1.633-1.598,3.107-0.17,4.422l1.417,1.304l0.283,0.26    l1.791,1.649c1.607,1.478,4.099,1.353,5.553-0.283C32.058,28.709,31.934,26.177,30.327,24.698z M4.453,15.596H3.912v-4.583h0.542    L4.453,15.596z M13.147,18.705c-0.581,0-1.052-0.478-1.052-1.068c0-0.592,0.472-1.069,1.052-1.069    c0.582,0,1.052,0.478,1.052,1.069C14.199,18.228,13.728,18.705,13.147,18.705z M9.248,15.596l-0.001-4.604h0.521v1.441    c0,0.002,0,0.006,0,0.008c0,0.448,0.359,0.814,0.799,0.814c0.131,0,0.248-0.04,0.358-0.095l0.003,0.004l1.382-0.942l0.728-0.495    l0.521-0.354l0,0c0-0.004,0.001-0.004,0.003-0.004c0.264-0.268,0.313-0.669,0.148-0.982l2.83-1.952l-0.787,2.495h0.763    l0.349-1.167h1.279l0.366,1.167h0.799l-0.086-0.27c0.155,0.198,0.4,0.338,0.729,0.338c0.385,0,0.691-0.166,0.865-0.397h0.018    l0.054,0.329h0.667c-0.037-0.183-0.048-0.446-0.048-0.714V9.147c0-0.651-0.271-1.257-1.208-1.257c-0.462,0-0.84,0.128-1.057,0.262    l0.145,0.488c0.197-0.128,0.499-0.219,0.787-0.219c0.516,0,0.594,0.322,0.594,0.517v0.05c-1.064-0.007-1.711,0.368-1.732,1.09    l-1.043-3.265h-0.943L16.71,7.899l-3.222,2.224c-0.134-0.101-0.289-0.154-0.449-0.16c-0.222-0.009-0.449,0.068-0.619,0.243    c0,0-0.003,0.004-0.005,0.004l-0.104,0.074l-0.942,0.653V10.66c-0.175-2.114-2.587-2.082-2.587-2.082H7.74l-0.879,1.469    L5.979,8.578H4.976c-2.542,0-2.56,1.831-2.56,2.523H2.415v4.494H1.894V1.886h22.275v13.71H9.248z M17.433,7.647    c0.02-0.08,0.04-0.16,0.058-0.234h0.012c0.061,0.238,0.126,0.519,0.205,0.77l0.317,1.014h-1.039l0.312-1.014    c0.028-0.104,0.056-0.218,0.084-0.331l0.166-0.111L17.433,7.647z M19.767,10.031c0-0.45,0.499-0.562,1.021-0.555v0.409    c0,0.055,0,0.109-0.018,0.164c-0.072,0.215-0.283,0.409-0.583,0.409C19.953,10.459,19.767,10.325,19.767,10.031z M21.925,27    c-1.226-1.125-0.656-2.287,0.249-3.69l0.652-0.747c1.289-1.107,2.594-1.631,3.847-0.479l1.235,1.137    c-0.303,1.023-0.845,1.98-1.613,2.842l0,0c-1.031,1.159-2.229,1.885-2.942,2.251L21.925,27z M30.2,29.971    c-1.254,1.406-3.399,1.516-4.783,0.242l-1.496-1.377c1.177-0.662,2.176-1.45,2.972-2.342c0.931-1.046,1.403-2.037,1.64-2.7    l1.429,1.314C31.345,26.381,31.453,28.562,30.2,29.971z"/>
+                                        <path d="M24.22,23.229c-0.369-0.341-0.943-0.311-1.278,0.064c-0.335,0.377-0.307,0.959,0.064,1.298    l1.284,1.185c0.37,0.34,0.944,0.311,1.279-0.064c0.335-0.377,0.306-0.961-0.063-1.301L24.22,23.229z M25.165,25.339    c-0.133,0.151-0.362,0.16-0.51,0.025l-1.284-1.181c-0.147-0.137-0.158-0.371-0.025-0.52c0.134-0.148,0.362-0.162,0.509-0.024    l1.285,1.182C25.287,24.957,25.298,25.188,25.165,25.339z"/>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- More navmenu -->
+                    <div class="relative flex items-center sm:hidden">
+                        <button class="p-2 text-gray-400 focus:outline-none hover:bg-gray-100 rounded-lg hover:border">
+                            <svg class="w-5 h-5 fill-current md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24.75px" height="24.75px" viewBox="0 0 24.75 24.75" style="enable-background:new 0 0 24.75 24.75;" xml:space="preserve">
+                                <g>
+                                    <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2   c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2   c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z"/>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-full flex bg-gray-100 flex-col sm:flex-row flex-wrap sm:flex-nowrap py-4 flex-grow">
+        <div class="w-fixed w-full flex-shrink flex-grow-0 px-4 hidden sm:block">
+            <div class="fixed pb-4 pl-4 pr-4 bg-100 h-full">
+                <ul class="flex sm:flex-col overflow-hidden content-center justify-center">
+                    <li class="py-2 hover:bg-gray-200 rounded">
+                        <a class="truncate flex justify-start items-center" href="#">
+                            <img src="./public/assets/images/user.jpg" class="w-7 rounded-full mx-4" />
+                            <span>Tanzirul Huda</span>
+                        </a>
+                    </li>
+                    <li class="py-2 hover:bg-gray-200 rounded">
+                        <a class="truncate flex justify-start items-center" href="#">
+                            <svg class="w-8 h-8 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                <path fill="none" d="M4 9H20M4 15H20M10 3L7 21M17 3L14 21" stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+                                <defs>
+                                <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#93C5FD" />
+                                    <stop offset="40%" stop-color="#60A5FA" />
+                                    <stop offset="60%" stop-color="#3B82F6" />
+                                    <stop offset="100%" stop-color="#2563EB" />
+                                </linearGradient>
+                                </defs> 
+                            </svg>
+                            <span>Populer Hashtags</span>
+                        </a>
+                    </li>
+                    <li class="py-2 hover:bg-gray-200 rounded">
+                        <a class="truncate flex justify-start items-center" href="#">
+                            <svg class="w8- h-8 mx-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g><g><g>
+                                    <path d="M93.238,220.968h172.463c4.466,0,8.084-3.619,8.084-8.084s-3.618-8.084-8.084-8.084H93.238     c-4.466,0-8.084,3.619-8.084,8.084S88.772,220.968,93.238,220.968z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)" />
+                                    <path d="M93.238,177.853h97.01c4.466,0,8.084-3.619,8.084-8.084s-3.618-8.084-8.084-8.084h-97.01     c-4.466,0-8.084,3.619-8.084,8.084S88.772,177.853,93.238,177.853z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)" />
+                                    <path d="M114.796,398.282h280.253c16.344,0,29.642-13.298,29.642-29.642v-91.082c0-5.206-1.371-10.333-3.968-14.822     c-2.233-3.865-7.179-5.189-11.044-2.953c-3.866,2.233-5.188,7.179-2.953,11.044c1.176,2.034,1.797,4.362,1.797,6.732v91.082     c0,7.43-6.044,13.474-13.474,13.474H114.796c-7.43,0-13.474-6.044-13.474-13.474v-91.082c0-7.43,6.044-13.474,13.474-13.474     h150.905c4.466,0,8.084-3.619,8.084-8.084c0-4.466-3.618-8.084-8.084-8.084H114.796c-16.344,0-29.642,13.298-29.642,29.642     v91.082C85.154,384.984,98.452,398.282,114.796,398.282z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)" />
+                                    <path d="M477.068,412.237c1.684-5.067,2.596-10.484,2.596-16.11V158.989c0-28.231-22.969-51.2-51.2-51.2h-45.81V29.642     C382.653,13.298,369.355,0,353.01,0h-21.558c-16.344,0-29.642,13.298-29.642,29.642v78.147H83.537     c-28.231,0-51.2,22.969-51.2,51.2v237.137c0,5.627,0.912,11.043,2.596,16.11C14.43,419.065,0,438.368,0,460.8     C0,489.031,22.969,512,51.2,512h409.6c28.231,0,51.2-22.969,51.2-51.2C512,438.368,497.57,419.065,477.068,412.237z      M317.979,29.642c0-7.43,6.044-13.474,13.474-13.474h21.558c7.43,0,13.474,6.044,13.474,13.474v13.474h-48.505V29.642z      M366.484,59.284v188.632h-16.168V59.284H366.484z M317.979,59.284h16.168v188.632h-16.168V59.284z M317.979,264.084h48.505     v20.66c0,0.579-0.192,1.153-0.539,1.617l-21.558,28.743c-0.704,0.938-1.652,1.078-2.156,1.078c-0.503,0-1.452-0.14-2.156-1.078     l-21.557-28.741c-0.348-0.466-0.54-1.04-0.54-1.619V264.084z M48.505,158.989c0-19.317,15.715-35.032,35.032-35.032h218.274     v37.726h-57.667c-4.466,0-8.084,3.619-8.084,8.084s3.618,8.084,8.084,8.084h57.667v106.892c0,4.053,1.339,8.071,3.773,11.318     l21.558,28.743c3.596,4.796,9.096,7.545,15.091,7.545c5.994,0,11.495-2.75,15.091-7.545l21.559-28.745     c2.433-3.244,3.772-7.263,3.772-11.316v-63.776h33.954c4.466,0,8.084-3.619,8.084-8.084s-3.619-8.084-8.084-8.084h-33.954     v-26.947h33.954c4.466,0,8.084-3.619,8.084-8.084s-3.619-8.084-8.084-8.084h-33.954v-37.726h45.81     c19.317,0,35.032,15.715,35.032,35.032v237.137c0,19.317-15.715,35.032-35.032,35.032H83.537     c-19.317,0-35.032-15.715-35.032-35.032V158.989z M460.8,495.832H51.2c-19.317,0-35.032-15.715-35.032-35.032     c0-16.257,11.071-30.113,26.426-33.963c9.349,12.434,24.222,20.49,40.943,20.49h344.926c16.72,0,31.594-8.056,40.943-20.49     c15.355,3.85,26.426,17.707,26.426,33.963C495.832,480.117,480.117,495.832,460.8,495.832z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)" />
+                                    <path d="M235.52,463.495h-1.078c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h1.078     c4.466,0,8.084-3.618,8.084-8.084C243.604,467.113,239.986,463.495,235.52,463.495z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)" />
+                                    <path d="M433.853,463.495H272.168c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h161.684     c4.466,0,8.084-3.618,8.084-8.084C441.937,467.113,438.318,463.495,433.853,463.495z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)" />
+                                    <path d="M202.105,463.495h-1.078c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h1.078     c4.466,0,8.084-3.618,8.084-8.084C210.189,467.113,206.571,463.495,202.105,463.495z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)" />
+                                    <path d="M164.379,463.495H78.147c-4.466,0-8.084,3.618-8.084,8.084c0,4.466,3.618,8.084,8.084,8.084h86.232     c4.466,0,8.084-3.618,8.084-8.084C172.463,467.113,168.845,463.495,164.379,463.495z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)" />
+                                        <defs>
+                                        <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                          <stop offset="0%" stop-color="#93C5FD" />
+                                          <stop offset="40%" stop-color="#60A5FA" />
+                                          <stop offset="60%" stop-color="#3B82F6" />
+                                          <stop offset="100%" stop-color="#2563EB" />
+                                        </linearGradient>
+                                      </defs> 
+                                    </g></g></g><g></g><g></g> <g></g><g></g><g> </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                            </svg>
+                            <span>For you to read</span>
+                        </a>
+                    </li>
+                    <li class="py-2 hover:bg-gray-200 rounded">
+                        <a class="truncate flex justify-start items-center" href="#">
+                            <svg class="w-8 h-8 mx-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 488.1 488.1" style="enable-background:new 0 0 488.1 488.1;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M476.4,325.9c-40.9-33.6-85-55.9-93.9-60.3c-1-0.5-1.6-1.5-1.6-2.6v-63.7c8-5.3,13.3-14.4,13.3-24.8v-66     c0-32.8-26.6-59.5-59.5-59.5h-7.1h-7.1c-32.8,0-59.5,26.6-59.5,59.5v66c0,10.3,5.3,19.4,13.3,24.8V263c0,1.1-0.6,2.2-1.6,2.6     c-4.6,2.2-18.3,9.1-36,19.8v8.7c18.4,9.8,53.9,30,87.2,57.4c12.7,10.5,20,25.9,20,42.5v1.9h144.2v-45.2     C488,341,483.8,331.9,476.4,325.9z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                        </g>
+                                        <g>
+                                            <path d="M309.2,369.2c-40.9-33.6-85-55.9-93.9-60.3c-1-0.5-1.6-1.5-1.6-2.6v-63.7c8-5.3,13.3-14.4,13.3-24.8v-66     c0-32.8-26.6-59.5-59.5-59.5h-7.1h-7.1c-32.8,0-59.5,26.6-59.5,59.5v66c0,10.3,5.3,19.4,13.3,24.8v63.7c0,1.1-0.6,2.2-1.6,2.6     c-9,4.4-53.1,26.7-93.9,60.3C4.2,375.3,0,384.4,0,393.9v45.2h160.5H321v-45.2C320.8,384.4,316.6,375.3,309.2,369.2z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                                  <defs>
+                                                        <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                                            <stop offset="0%" stop-color="#93C5FD" />
+                                                            <stop offset="40%" stop-color="#60A5FA" />
+                                                            <stop offset="60%" stop-color="#3B82F6" />
+                                                            <stop offset="100%" stop-color="#2563EB" />
+                                                        </linearGradient>
+                                                    </defs> 
+                                        </g>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                            <span>Following</span>
+                        </a>
+                    </li>
+                    <li class="py-2 hover:bg-gray-200 rounded">
+                        <a class="truncate flex justify-start items-center" href="#">
+                            <svg class="w-8 h-8 mx-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 310.746 310.746" style="enable-background:new 0 0 310.746 310.746;" xml:space="preserve">
+                                <g id="XMLID_227_">
+                                    <path id="XMLID_228_" d="M32.622,75.373c0,23.666,18.367,43.109,41.594,44.857c-7.382-13.302-11.594-28.596-11.594-44.857   s4.212-31.556,11.594-44.857C50.989,32.264,32.622,51.707,32.622,75.373z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                    <path id="XMLID_229_" d="M0,227.996c0,8.284,6.716,15,15,15h1.025c11.602-40.229,40.192-73.322,77.464-90.984   c-5.17-1.077-10.482-1.639-15.867-1.639C34.821,150.373,0,185.194,0,227.996z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                    <path id="XMLID_230_" d="M278.124,75.373c0-23.666-18.367-43.109-41.594-44.857c7.382,13.302,11.594,28.596,11.594,44.857   s-4.212,31.556-11.594,44.857C259.757,118.482,278.124,99.039,278.124,75.373z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                    <path id="XMLID_231_" d="M295.746,242.996c8.284,0,15-6.716,15-15c0-42.802-34.821-77.623-77.622-77.623   c-5.385,0-10.697,0.561-15.867,1.639c37.271,17.662,65.862,50.756,77.464,90.984H295.746z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                    <path id="XMLID_232_" d="M155.373,138.123c21.093,0,39.774-10.473,51.157-26.479c7.289-10.25,11.594-22.764,11.594-36.271   s-4.305-26.021-11.594-36.271c-11.383-16.006-30.064-26.479-51.157-26.479c-34.601,0-62.75,28.149-62.75,62.75   S120.772,138.123,155.373,138.123z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                    <path id="XMLID_233_" d="M270.373,283.123c0-14.107-2.56-27.627-7.229-40.127c-13.457-36.025-44.485-63.549-82.606-72.092   c-8.102-1.816-16.522-2.781-25.165-2.781c-63.411,0-115,51.589-115,115c0,8.284,6.716,15,15,15h200   C263.657,298.123,270.373,291.407,270.373,283.123z"stroke="url(#Gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                    <defs>
+                                        <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                          <stop offset="0%" stop-color="#93C5FD" />
+                                          <stop offset="40%" stop-color="#60A5FA" />
+                                          <stop offset="60%" stop-color="#3B82F6" />
+                                          <stop offset="100%" stop-color="#2563EB" />
+                                        </linearGradient>
+                                    </defs> 
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                            <span>Discuss Together</span>
+                        </a>
+                    </li>
+                    <li class="py-2 hover:bg-gray-200 rounded">
+                        <a class="truncate flex justify-start items-center" href="#">
+                            <svg class="w-8 h-8 mx-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.654 31.654" style="enable-background:new 0 0 31.654 31.654;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M23.292,5.926c0-0.242-0.193-0.44-0.435-0.44h-11.45c-0.24,0-0.434,0.198-0.434,0.44v2.899    c0.26,0.252,0.483,0.558,0.63,0.948l0.122-0.087c0.036-0.035,0.077-0.06,0.116-0.089v-3.23h10.583v7.676H11.841v-0.827    l-0.867,0.594v0.675c0,0.243,0.194,0.441,0.434,0.441c0,0,10.084,0,11.007,0c0.925,0,0.878-0.529,0.878-0.529V5.926H23.292z"stroke="url(#Gradient1)" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                        <ellipse cx="6.811" cy="6.361" rx="1.831" ry="1.861" stroke="url(#Gradient1)" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                        <path d="M30.327,24.698l-1.804-1.66l-0.266-0.245l-1.22-1.12c-1.459-1.345-3.083-0.819-4.581,0.481    l-0.015,0.013l-0.087,0.101c-0.188-0.034-0.557-0.134-0.783-0.439c-0.227-0.309-0.266-0.763-0.118-1.354    c0.062-0.248,0.104-0.47,0.126-0.666h2.712c0.958,0,1.731-0.795,1.731-1.775V1.771c0-0.98-0.773-1.771-1.731-1.771H1.771    C0.813,0,0.037,0.791,0.037,1.771v16.262c0,0.98,0.776,1.775,1.734,1.775h8.641c0,0,0.375,3.549-2.62,3.549v1.775h2.62h5.236    h2.622v-1.775c-3.111,0-2.622-3.549-2.622-3.549h5.383c-0.02,0.145-0.05,0.313-0.104,0.529c-0.19,0.76-0.121,1.372,0.209,1.82    c0.232,0.316,0.549,0.484,0.813,0.575l-0.196,0.226l-0.024,0.03c-1.063,1.633-1.598,3.107-0.17,4.422l1.417,1.304l0.283,0.26    l1.791,1.649c1.607,1.478,4.099,1.353,5.553-0.283C32.058,28.709,31.934,26.177,30.327,24.698z M4.453,15.596H3.912v-4.583h0.542    L4.453,15.596z M13.147,18.705c-0.581,0-1.052-0.478-1.052-1.068c0-0.592,0.472-1.069,1.052-1.069    c0.582,0,1.052,0.478,1.052,1.069C14.199,18.228,13.728,18.705,13.147,18.705z M9.248,15.596l-0.001-4.604h0.521v1.441    c0,0.002,0,0.006,0,0.008c0,0.448,0.359,0.814,0.799,0.814c0.131,0,0.248-0.04,0.358-0.095l0.003,0.004l1.382-0.942l0.728-0.495    l0.521-0.354l0,0c0-0.004,0.001-0.004,0.003-0.004c0.264-0.268,0.313-0.669,0.148-0.982l2.83-1.952l-0.787,2.495h0.763    l0.349-1.167h1.279l0.366,1.167h0.799l-0.086-0.27c0.155,0.198,0.4,0.338,0.729,0.338c0.385,0,0.691-0.166,0.865-0.397h0.018    l0.054,0.329h0.667c-0.037-0.183-0.048-0.446-0.048-0.714V9.147c0-0.651-0.271-1.257-1.208-1.257c-0.462,0-0.84,0.128-1.057,0.262    l0.145,0.488c0.197-0.128,0.499-0.219,0.787-0.219c0.516,0,0.594,0.322,0.594,0.517v0.05c-1.064-0.007-1.711,0.368-1.732,1.09    l-1.043-3.265h-0.943L16.71,7.899l-3.222,2.224c-0.134-0.101-0.289-0.154-0.449-0.16c-0.222-0.009-0.449,0.068-0.619,0.243    c0,0-0.003,0.004-0.005,0.004l-0.104,0.074l-0.942,0.653V10.66c-0.175-2.114-2.587-2.082-2.587-2.082H7.74l-0.879,1.469    L5.979,8.578H4.976c-2.542,0-2.56,1.831-2.56,2.523H2.415v4.494H1.894V1.886h22.275v13.71H9.248z M17.433,7.647    c0.02-0.08,0.04-0.16,0.058-0.234h0.012c0.061,0.238,0.126,0.519,0.205,0.77l0.317,1.014h-1.039l0.312-1.014    c0.028-0.104,0.056-0.218,0.084-0.331l0.166-0.111L17.433,7.647z M19.767,10.031c0-0.45,0.499-0.562,1.021-0.555v0.409    c0,0.055,0,0.109-0.018,0.164c-0.072,0.215-0.283,0.409-0.583,0.409C19.953,10.459,19.767,10.325,19.767,10.031z M21.925,27    c-1.226-1.125-0.656-2.287,0.249-3.69l0.652-0.747c1.289-1.107,2.594-1.631,3.847-0.479l1.235,1.137    c-0.303,1.023-0.845,1.98-1.613,2.842l0,0c-1.031,1.159-2.229,1.885-2.942,2.251L21.925,27z M30.2,29.971    c-1.254,1.406-3.399,1.516-4.783,0.242l-1.496-1.377c1.177-0.662,2.176-1.45,2.972-2.342c0.931-1.046,1.403-2.037,1.64-2.7    l1.429,1.314C31.345,26.381,31.453,28.562,30.2,29.971z" stroke="url(#Gradient1)" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" fill="none"/>
+                                        <path d="M24.22,23.229c-0.369-0.341-0.943-0.311-1.278,0.064c-0.335,0.377-0.307,0.959,0.064,1.298    l1.284,1.185c0.37,0.34,0.944,0.311,1.279-0.064c0.335-0.377,0.306-0.961-0.063-1.301L24.22,23.229z M25.165,25.339    c-0.133,0.151-0.362,0.16-0.51,0.025l-1.284-1.181c-0.147-0.137-0.158-0.371-0.025-0.52c0.134-0.148,0.362-0.162,0.509-0.024    l1.285,1.182C25.287,24.957,25.298,25.188,25.165,25.339z" stroke="url(#Gradient1)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+                                        <defs>
+                                            <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                              <stop offset="0%" stop-color="#93C5FD" />
+                                              <stop offset="40%" stop-color="#60A5FA" />
+                                              <stop offset="60%" stop-color="#3B82F6" />
+                                              <stop offset="100%" stop-color="#2563EB" />
+                                            </linearGradient>
+                                        </defs> 
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                            <span>Online classes</span>
+                        </a>
+                    </li>
+                    <li class="py-2 hover:bg-gray-200 rounded">
+                        <a class="truncate flex justify-start items-center" href="#">
+                            <svg class="w-8 h-8 mx-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 43.128 43.128" style="enable-background:new 0 0 43.128 43.128;" xml:space="preserve">
+                                <g>
+                                    <path d="M39.199,15.197H27.668L24.105,4.232c-1.404-4.326-3.68-4.326-5.084,0l-3.563,10.965H3.928   c-4.545,0-5.25,2.164-1.571,4.836l9.326,6.775L8.121,37.775c-1.404,4.322,0.438,5.662,4.116,2.988l9.326-6.775l9.328,6.775   c3.678,2.674,5.52,1.334,4.116-2.988l-3.564-10.967l9.326-6.775C44.449,17.361,43.744,15.197,39.199,15.197z"stroke="url(#Gradient1)" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                    <defs>
+                                        <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                          <stop offset="0%" stop-color="#93C5FD" />
+                                          <stop offset="40%" stop-color="#60A5FA" />
+                                          <stop offset="60%" stop-color="#3B82F6" />
+                                          <stop offset="100%" stop-color="#2563EB" />
+                                        </linearGradient>
+                                    </defs> 
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                            <span>Favourites</span>
+                        </a>
+                    </li>
+                    <li class="py-2 hover:bg-gray-200 rounded">
+                        <a class="truncate flex justify-start items-center" href="#">
+                            <svg class="w-8 h-8 mx-3" viewBox="30 31.5 452 452">
+                                <g fill-rule="evenodd">
+                                <path d="M 441,81 A 40,40 0 0 1 481,121 L 481,395 A 40,40 0 0 1 441,435 L 71,435 A 40,40 0 0 1 31,395 L 31,121 A 40,40 0 0 1 71,81 Z M 63,121 A 8,8 0 0 1 71,113 L 441,113 A 8,8 0 0 1 449,121 L 449,131 C 448,150 438,166 417,188 L 288,291 C258,311 254,311 224,291 L 95,188 C 74,166 64,150 63,131 Z M 63,202 C 66,205 75,214 80,218 L 208,320 C 245,344 265,344 304,320 L 432,218 C 437,214 446,205 449,202 L 449,394 A 8,8 0 0 1 441,402 L 71,402 A 8,8 0 0 1 63,394 Z"stroke="url(#Gradient1)" stroke-width=".2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="url(#Gradient1)"/>
+                                <defs>
+                                    <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                      <stop offset="0%" stop-color="#93C5FD" />
+                                      <stop offset="40%" stop-color="#60A5FA" />
+                                      <stop offset="60%" stop-color="#3B82F6" />
+                                      <stop offset="100%" stop-color="#2563EB" />
+                                    </linearGradient>
+                                </defs>     
+                            </g>
+                            </svg>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main role="main" class="w-full flex-grow pt-1 px-3">
+            <!-- Question input field -->
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                <div class="p-4 cursor-pointer flex flex-col">
+                    <div class="flex items-center px-2 py-1">
+                        <img class="rounded-full w-10 h-full object-cover" src="./public/assets/images/user.jpg" alt="">
+                        <span class="px-2 text-gray-500 font-semibold text-md">Tanzirul Huda</span>
+                    </div>
+                    <div>
+                        <p class="text-gray-500 font-semibold text-lg">What is your problem or link?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group posts -->
+            <div class="mt-2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                <div class="max-w-md md:max-w-2xl container bg-white rounded-xl shadow-md">
+                    <a href="#">
+                        <div class="flex space-x-2 px-3 pt-3 items-center">
+                            <img class="rounded-full w-10 h-10 object-cover" src="./public/assets/images/dummy-image2.jpg" alt="">
+                            <div class="items-center">
+                                <p class="text-gray-600 font-semibold text-lg hover:underline">Science Group</p>
+                                <p class="text-sm text-gray-500">3 days ago</p>
+                            </div>
+                        </div>
+                    </a>
+                  <div>
+                    <p class="text-lg mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">Desert night sky</p>
+                    <div class="flex space-x-1">
+                        <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#science</p>
+                        <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#geography</p>
+                    </div>
+                  </div>
+                  <img class="w-full cursor-pointer object-cover" src="./public/assets/images/dummy-image1.jpg" alt="" />
+                  <div class="flex p-4 justify-between">
+                    <div class="flex items-center space-x-2">
+                      <img class="w-10 h-10 rounded-full object-cover" src="./public/assets/images/user2.jpg" alt="sara" />
+                      <h2 class="text-gray-800 font-bold cursor-pointer">Felipe Sacudon</h2> <span class="font-bold">&#183;</span><p class="text-blue-600 cursor-pointer hover:underline">Follow</p>
+                    </div>
+                    <div class="flex space-x-2">
+                      <div class="flex space-x-1 items-center">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                          </svg>
+                        </span>
+                        <span>22</span>
+                      </div>
+                      <div class="flex space-x-1 items-center">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-red-500 hover:text-red-400 transition duration-100 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        <span>20</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="mt-2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                <div class="max-w-md md:max-w-2xl container bg-white rounded-xl shadow-md">
+                    <a href="#">
+                        <div class="flex space-x-2 px-3 pt-3 items-center">
+                            <img class="rounded-full w-10 h-10 object-cover" src="./public/assets/images/dummy-image2.jpg" alt="">
+                            <div class="items-center">
+                                <p class="text-gray-600 font-semibold text-lg hover:underline">Science Group</p>
+                                <p class="text-sm text-gray-500">1 hour ago</p>
+                            </div>
+                        </div>
+                    </a>
+                  <div>
+                    <p class="text-lg mt-2 ml-4 font-bold text-gray-800 cursor-pointer hover:text-gray-900 transition duration-100">The philosophy of chemistry</p>
+                    <div class="flex space-x-1">
+                        <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#science</p>
+                        <p class="ml-4 mt-1 mb-2 text-gray-700 hover:underline cursor-pointer">#chemistry</p>
+                    </div>
+                  </div>
+                  <img class="w-full cursor-pointer object-cover" src="./public/assets/images/dummy-image2.jpg" alt="" />
+                  <div class="flex p-4 justify-between">
+                    <div class="flex items-center space-x-2">
+                      <img class="w-10 h-10 rounded-full object-cover" src="./public/assets/images/user2.jpg" alt="sara" />
+                      <h2 class="text-gray-800 font-bold cursor-pointer">Felipe Sacudon</h2> <span class="font-bold">&#183;</span><p class="text-blue-600 cursor-pointer hover:underline">Follow</p>
+                    </div>
+                    <div class="flex space-x-2">
+                      <div class="flex space-x-1 items-center">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-gray-600 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                          </svg>
+                        </span>
+                        <span>22</span>
+                      </div>
+                      <div class="flex space-x-1 items-center">
+                        <span>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-red-500 hover:text-red-400 transition duration-100 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                          </svg>
+                        </span>
+                        <span>20</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+            <!-- Blog content -->
+            <div class="mt-2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img src="./public/assets/images/dummy-image3.jpg" alt="" class="h-48 w-full object-cover md:h-full md:w-48">
+                    </div>
+                    <div class="pt-8 px-8 pb-5">
+                        <div class="flex justify-between">
+                            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Astronomy</div>
+                            <svg class="fill-current text-gray-400 w-5 h-5 mr-5 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459 459">
+                                <path d="M357 0H102C73.95 0 51 22.95 51 51v408l178.5-76.5L408 459V51c0-28.05-22.95-51-51-51z"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline truncate max-w-md">Astronomers Discover Hot, Dense Planet With Eight-Hour Year</a>
+                        <p class="mt-2 text-gray-500 c-truncate max-w-md">An international team involving researchers at UCL has discovered a new planet, GJ 367 b, whose surface temperature may reach 1,500 degrees Centigrade – hot enough to melt all rock and metal – and which takes only eight hours to orbit its star.</p>
+                        <div class="pt-3 flex space-x-2 items-center">
+                            <img class="rounded-full w-10 h-10 object-cover" src="./public/assets/images/user.jpg" alt="">
+                            <div class="flex flex-col">
+                                <p class="text-gray-500 font-xs">Tanzirul Huda</p>
+                                <p class="text-gray-500 font-xs">8 Dec</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img src="./public/assets/images/dummy-image4.jpeg" alt="" class="h-48 w-full object-cover md:h-full md:w-48">
+                    </div>
+                    <div class="pt-8 px-8 pb-5">
+                        <div class="flex justify-between">
+                            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Astronomy</div>
+                            <svg class="fill-current text-gray-400 w-5 h-5 mr-5 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459 459">
+                                <path d="M357 0H102C73.95 0 51 22.95 51 51v408l178.5-76.5L408 459V51c0-28.05-22.95-51-51-51z"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline truncate max-w-md">Mystery Of High-Performing Solar Cell Materials Revealed In Stunning Clarity</a>
+                        <p class="mt-2 text-gray-500 c-truncate max-w-md">Researchers have visualised, for the first time, why perovskites – materials which could replace silicon in next-generation solar cells – are seemingly so tolerant of defects in their structure. The findings, led by researchers from the University of Cambridge, are published in the journal Nature Nanotechnology.</p>
+                        <div class="pt-3 flex space-x-2 items-center">
+                            <img class="rounded-full w-10 h-10 object-cover" src="./public/assets/images/user2.jpg" alt="">
+                            <div class="flex flex-col">
+                                <p class="text-gray-500 font-xs">Felipe Sacudon</p>
+                                <p class="text-gray-500 font-xs">Today</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="w-fixed w-fixed-right w-full flex-shrink px-2 mr-2 hidden lg:block">
+            <div class="flex sm:flex-col px-2">
+                <div class="fixed top-20 overflow-x-scroll h-full pb-16">
+                    <!-- Sponsored Ad -->
+                    <div class="text-bold pt-5 text-gray-500">
+                        Sponsored
+                    </div>
+                    <!-- Sponsored Ads -->
+                    <div class="border-b">
+                        <div class="mt-2 p-2 max-w-md mx-auto rounded-md overflow-hidden md:max-w-2xl hover:bg-gray-200">
+                            <a href="#">
+                                <div class="flex justify-center items-center">
+                                    <div class="md:flex-shrink-0">
+                                        <img class="h-16 w-20 object-cover" src="https://i.pinimg.com/originals/51/aa/eb/51aaebc23753c9b123ef1bbb12fcea76.jpg" alt="Ad. Image">
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-semi-bold text-md c-truncate">Become an expert in spoken english</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mt-2 p-2 max-w-md mx-auto rounded-md overflow-hidden md:max-w-2xl hover:bg-gray-200">
+                            <a href="#">
+                                <div class="flex justify-center items-center">
+                                    <div class="md:flex-shrink-0">
+                                        <img class="h-16 w-20 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrr6vh4BsW_sAExeiDVPMpDpclUSby-sbg5A&usqp=CAU" alt="Ad. Image">
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-semi-bold text-md c-truncate">SSC chemistry, periodic table, chapter 4</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
